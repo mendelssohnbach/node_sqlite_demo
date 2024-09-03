@@ -13,6 +13,8 @@ v22.7.0
 
 ## Code and log
 
+### Use SQLite.
+
 package.json
 
 ```json
@@ -48,7 +50,7 @@ console.log(query.all());
 
 console
 
-```text
+```terminal
 $ npm run node:sql src/index.mjs
 
 > node_sqlite_demo@1.0.0 node:sql
@@ -61,4 +63,32 @@ $ npm run node:sql src/index.mjs
 ]
 (node:2153301) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
+```
+### USe .env
+
+package.json
+
+```json
+"scripts": {
+  "node:env": "node --env-file=.env"
+},
+```
+
+src/sample.mjs
+
+```JavaScript
+const password = process.env.DB_PASSWORD
+console.log(password)
+
+```
+
+console
+
+```terminal
+ $ npm run node:env src/sample.mjs 
+
+> node_sqlite_demo@1.0.0 node:env
+> node --env-file=.env src/sample.mjs
+
+SECRET_WORD
 ```
