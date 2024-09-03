@@ -2,7 +2,11 @@
 
 ## Docs
 
-https://nodejs.org/docs/latest/api/sqlite.html?utm_source=bhdouglass.com
+- Sqlite: 
+https://nodejs.org/docs/latest/api/sqlite.html?utm_source
+
+- .env 
+https://nodejs.org/docs/latest/api/process.html#processenv
 
 ## Experimental environment
 
